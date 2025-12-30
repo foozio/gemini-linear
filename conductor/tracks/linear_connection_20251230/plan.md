@@ -3,7 +3,7 @@
 Verify the secure bridge functionality by implementing a basic connectivity test that confirms the `index.js` adapter can successfully authenticate and communicate with the Linear MCP server.
 
 ## Phase 1: Validation and Error Handling
-- [ ] Task: Create a test suite to verify `index.js` behavior
+- [x] Task: Create a test suite to verify index.js behavior [7a0617f]
 - [ ] Task: Write Tests: Verify `index.js` fails when `LINEAR_API_KEY` is missing
 - [ ] Task: Write Tests: Verify `index.js` spawns `mcp-remote` with correct `Authorization` header when key is present
 - [ ] Task: Conductor - User Manual Verification 'Validation and Error Handling' (Protocol in workflow.md)
