@@ -5,7 +5,7 @@ Verify the secure bridge functionality by implementing a basic connectivity test
 ## Phase 1: Validation and Error Handling
 - [x] Task: Create a test suite to verify index.js behavior [7a0617f]
 - [x] Task: Write Tests: Verify index.js fails when LINEAR_API_KEY is missing [2067cb9]
-- [ ] Task: Write Tests: Verify `index.js` spawns `mcp-remote` with correct `Authorization` header when key is present
+- [x] Task: Write Tests: Verify index.js spawns mcp-remote with correct Authorization header when key is present [9784d5b]
 - [ ] Task: Conductor - User Manual Verification 'Validation and Error Handling' (Protocol in workflow.md)
 
 ## Phase 2: Live Connectivity Verification
