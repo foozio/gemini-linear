@@ -8,6 +8,6 @@ Verify the secure bridge functionality by implementing a basic connectivity test
 - [x] Task: Write Tests: Verify index.js spawns mcp-remote with correct Authorization header when key is present [9784d5b]
 - [x] Task: Conductor - User Manual Verification 'Validation and Error Handling' (Protocol in workflow.md) [f2971eb]
 
-## Phase 2: Live Connectivity Verification
+## Phase 2: Live Connectivity Verification [checkpoint: a2db2a3]
 - [x] Task: Manual Test: Run the adapter with a valid (temporary) API key and verify mcp-remote initializes [2c82cec]
-- [ ] Task: Conductor - User Manual Verification 'Live Connectivity Verification' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Live Connectivity Verification' (Protocol in workflow.md) [a2db2a3]
