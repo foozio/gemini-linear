@@ -39,16 +39,27 @@ const args = [
 ];
 
 // 5. Spawn the Bridge Process
-const child = spawn(mcpRemoteBin, args, {
-  stdio: 'inherit', // Connect stdin/stdout/stderr to this process
-  env: process.env  // Inherit environment
-});
+function run() {
+  const child = spawn(mcpRemoteBin, args, {
+    stdio: 'inherit', // Connect stdin/stdout/stderr to this process
+    env: process.env  // Inherit environment
+  });
 
-child.on('error', (err) => {
-  console.error('Failed to start mcp-remote:', err);
-  process.exit(1);
-});
+  child.on('error', (err) => {
+    console.error('Failed to start mcp-remote:', err);
+    process.exit(1);
+  });
 
-child.on('exit', (code) => {
-  process.exit(code);
-});
+  child.on('exit', (code) => {
+    process.exit(code);
+  });
+  
+  return child;
+}
+
+if (require.main === module) {
+  run();
+}
+
+module.exports = { run, args, mcpRemoteBin };
+
